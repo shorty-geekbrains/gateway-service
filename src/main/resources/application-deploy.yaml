@@ -1,0 +1,12 @@
+server:
+  port: 8188
+zuul:
+  host:
+    connect-timeout-millis: 5000
+    socket-timeout-millis: 300000
+  routes:
+    video-service:
+      url: http://video-service:8189/video-service
+ribbon:
+  eureka:
+    enabled: false
