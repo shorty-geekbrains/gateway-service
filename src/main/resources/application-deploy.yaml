@@ -6,6 +6,10 @@ spring:
           uri: http://video-service:8189
           predicates:
             - Path=/video-service/**
+        - id: client-service
+          uri: http://client-service:8191
+          predicates:
+            - Path=/client-service/**
 server:
   port: 8188
 logging:
